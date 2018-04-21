@@ -1,0 +1,32 @@
+﻿<Window x:Class="Xan.StellarisModTools.ToolsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Xan.StellarisModTools"
+        Title="Xan's Stellaris Mod Tools v">
+    <TabControl>
+        <TabItem Header="Collector">
+            <local:Collector />
+        </TabItem>
+        <TabItem Header="Formatter">
+            <local:Formatter />
+        </TabItem>
+        <TabItem Header="Backformatter">
+            <local:Backformatter />
+        </TabItem>
+        <TabItem Header="Extractor">
+            <local:Extractor />
+        </TabItem>
+        <TabItem Header="Subtractor">
+            <local:Subtractor />
+        </TabItem>
+        <TabItem Header="NameSplitter">
+            <local:NameSplitter />
+        </TabItem>
+        <TabItem Header="Upgrader">
+            <local:Upgrader />
+        </TabItem>
+        <TabItem Header="ReleaseCreator">
+            <local:ReleaseBuilder />
+        </TabItem>
+    </TabControl>
+</Window>

@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="Xan.StellarisModTools.Collector"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="buttonStart" Content="Start" Click="ButtonStartClick" />
+            <Button x:Name="buttonStop" Content="Stop" Click="ButtonStopClick" />
+            <Button x:Name="buttonClear" Content="Clear" Click="ButtonClearClick" />
+        </StackPanel>
+
+        <TextBox x:Name="textBoxResult" Grid.Row="1" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" />
+
+        <Button x:Name="buttonCopyResultToClipboard" Grid.Row="2" Content="Copy result to Clipboard" Click="ButtonCopyResultToClipboardClick" />
+    </Grid>
+</UserControl>
